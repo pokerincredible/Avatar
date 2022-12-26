@@ -27,9 +27,15 @@
     <ClInclude Include="src\Avatar\EntryPoint.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\Avatar\Log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Avatar\Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Avatar\Log.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
