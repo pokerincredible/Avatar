@@ -1,6 +1,6 @@
 #include "Application.h"
 
-namespace AR {
+namespace VE {
 
 	Application::Application()
 	{

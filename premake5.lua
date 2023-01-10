@@ -1,4 +1,4 @@
-workspace "AvatarStudio"
+workspace "VenusStudio"
 	architecture "x64"
 	configurations
 	{
@@ -9,8 +9,8 @@ workspace "AvatarStudio"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-project "Avatar"
-	location "Avatar"
+project "Venus"
+	location "Venus"
 	kind "SharedLib"
 	language "C++"
 
@@ -45,15 +45,15 @@ project "Avatar"
 		}
 
 		filter "configurations:Debug"
-			defines "AR_DEBUG"
+			defines "VE_DEBUG"
 			symbols "On"
 
 		filter "configurations:Release"
-			defines "AR_Release"
+			defines "VE_Release"
 			optimize "On"
 
 		filter "configurations:Dist"
-			defines "AR_Dist"
+			defines "VE_Dist"
 			optimize "On"
 
 project "Sandbox"
@@ -72,13 +72,13 @@ project "Sandbox"
 
 	includedirs
 	{
-		"Avatar/vendor/spdlog/include",
-		"Avatar/src"
+		"Venus/vendor/spdlog/include",
+		"Venus/src"
 	}
 
 	links
 	{
-		"Avatar"
+		"Venus"
 	}
 
 	filter "system:windows"

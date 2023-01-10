@@ -1,8 +1,8 @@
 #pragma once
 #include "Core.h"
 
-namespace AR {
-	class AR_API Application
+namespace VE {
+	class VE_API Application
 	{
 	public:
 		Application();

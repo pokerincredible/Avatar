@@ -1,7 +1,7 @@
-#include "Avatar.h"
+#include "Venus.h"
 #include <iostream>
 
-class Sandbox : public AR::Application
+class Sandbox : public VE::Application
 {
 public:
 	Sandbox()
@@ -16,7 +16,7 @@ public:
 
 };
 
-AR::Application* AR::CreateApplication()
+VE::Application* VE::CreateApplication()
 {
 	return new Sandbox();
 }

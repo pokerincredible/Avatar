@@ -1,3 +1,0 @@
-[submodule "Avatar/vendor/spdlog"]
-	path = Avatar/vendor/spdlog
-	url = https://github.com/gabime/spdlog
